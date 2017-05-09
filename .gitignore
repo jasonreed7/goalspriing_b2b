@@ -58,4 +58,4 @@ typings/
 .env
 
 build/
-src/images/
+app/images/

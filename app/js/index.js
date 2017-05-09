@@ -1,3 +1,4 @@
-require('../sass/index.scss');
+import 'normalize.css';
+import '../sass/index.scss';
 
 console.log('hi');

@@ -7,6 +7,8 @@
     "lint:style": "stylelint app/**/*.scss",
     "lint:js": "eslint app/ webpack.*.js --cache",
     "start": "nodemon --watch webpack.config.js --exec \"webpack-dev-server --env development\"",
+    "//": "webpack-dev-server --env development",
+    "//": "webpack-dev-server --config webpack.development.js --env development",
     "build": "webpack --env production"
   },
   "author": "",
@@ -25,6 +27,7 @@
     "node-sass": "^4.5.2",
     "nodemon": "^1.11.0",
     "postcss-loader": "^2.0.3",
+    "postcss-scss": "^1.0.0",
     "resolve-url-loader": "^2.0.2",
     "sass-loader": "^6.0.4",
     "style-loader": "^0.17.0",

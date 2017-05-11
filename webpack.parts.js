@@ -1,6 +1,6 @@
 const ExtractTextPlugin = require('extract-text-webpack-plugin');
 
-var inspect = exports.inspectLoader = {
+exports.inspectLoader = {
   loader: 'inspect-loader',
   options: {
     callback(inspect) {
@@ -88,7 +88,8 @@ exports.extractCSS = ({ include, exclude, use }) => {
           include, 
           exclude,
           use: plugin.extract({
-            use: use.concat(['resolve-url-loader', 'sass-loader?sourceMap']),
+            //use: use.concat(['resolve-url-loader', 'sass-loader?sourceMap']),
+            use: ['css-loader', exports.autoprefix(), 'resolve-url-loader' ,'sass-loader?sourceMap'],
             fallback: 'style-loader',
           })
         }
@@ -99,14 +100,43 @@ exports.extractCSS = ({ include, exclude, use }) => {
 
 };
 
+// exports.autoprefix = () => ({
+//   loader: 'postcss-loader',
+//   options: {
+//     plugins: () => ([
+//       require('autoprefixer'), require('postcss-focus')
+//     ]),
+//   },
+// });
+
 exports.autoprefix = () => ({
   loader: 'postcss-loader',
   options: {
-    plugins: () => ([
-      require('autoprefixer')({browsers: ['last 4 versions']}),
-    ]),
+    plugins: [require('autoprefixer'), require('postcss-focus')], 
   },
 });
+
+// exports.lintSCSS = ({ include, exclude }) => ({
+//   module: {
+//     rules: [
+//       {
+//         test: /\.scss$/,
+//         include,
+//         exclude,
+//         enforce: 'pre',
+//         loader: 'postcss-loader',
+//         options: {
+//           syntax: require('postcss-scss'),
+//           plugins: () => ([
+//             require('stylelint')({
+//               ignoreFiles: 'node_modules/**/*.scss'
+//             }),
+//           ]),
+//         },
+//       },
+//     ],
+//   },
+// });
 
 exports.lintSCSS = ({ include, exclude }) => ({
   module: {
@@ -118,11 +148,8 @@ exports.lintSCSS = ({ include, exclude }) => ({
         enforce: 'pre',
         loader: 'postcss-loader',
         options: {
-          plugins: () => ([
-            require('stylelint')({
-              ignoreFiles: 'node_modules/**/*.scss'
-            }),
-          ]),
+          syntax: require('postcss-scss'),
+          plugins: function() { return [ require('stylelint')({ignoreFiles: 'node_modules/**/*.scss'}) ]; } 
         },
       },
     ],

@@ -1,6 +1,8 @@
+$pink: #CCC;
+
 .app {
 	//background: url("../images/hero-background.png");
-	background: #AAA;
+	background: $pink;
 
 	display: flex;
 	transform: rotate(30deg);
@@ -10,4 +12,8 @@ a {
 	display: flex;
 	appearance: none;
 	background-color: #DDD;
+}
+
+.app:hover {
+	color: blue;
 }

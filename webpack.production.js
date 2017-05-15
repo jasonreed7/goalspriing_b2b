@@ -40,8 +40,8 @@ module.exports = {
 					use: ['css-loader', {
 							loader: 'postcss-loader',
 							options: {
-								plugins: [
-									require('autoprefixer'), require('postcss-focus')
+								plugins: () => [
+									require('autoprefixer')
 								]
 							}
 						}],
@@ -54,7 +54,7 @@ module.exports = {
 				enforce: 'pre',
 				loader: 'postcss-loader',
 				options: {
-					syntax: require('postcss-scss'),
+					syntax: 'postcss-scss',
 					plugins: () => ([
 						require('stylelint')({
 							ignoreFiles: 'node_modules/**/*.scss'
@@ -69,7 +69,7 @@ module.exports = {
 						{
 							loader: 'postcss-loader',
 							options: {
-								plugins: () => [require('autoprefixer'), require('postcss-focus')]
+								plugins: () => [require('autoprefixer')]
 							}
 						},
 						'resolve-url-loader', 'sass-loader?sourceMap'],

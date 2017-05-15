@@ -42,9 +42,9 @@ module.exports = {
 				{
 					loader: 'postcss-loader',
 					options: {
-						plugins: () => [
-							require('autoprefixer'), require('postcss-focus')
-						]
+						plugins: () => ([
+							require('autoprefixer')
+						])
 					}
 				},
 				'resolve-url-loader', 'sass-loader?sourceMap']

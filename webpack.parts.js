@@ -1,4 +1,5 @@
 const ExtractTextPlugin = require('extract-text-webpack-plugin');
+const PurifyCSSPlugin = require('purifycss-webpack');
 
 exports.inspectLoader = {
   loader: 'inspect-loader',
@@ -60,7 +61,7 @@ exports.loadSCSS = ({ include, exclude } = {}) => ({
         include,
         exclude,
 
-        use: ['style-loader', 'css-loader', 'resolve-url-loader', 'sass-loader?sourceMap'],
+        use: ['style-loader', 'css-loader', exports.autoprefix(), 'resolve-url-loader', 'sass-loader?sourceMap'],
       },
     ],
   },
@@ -85,11 +86,10 @@ exports.extractCSS = ({ include, exclude, use }) => {
         },
         {
           test: /\.scss$/,
-          include, 
+          include,
           exclude,
           use: plugin.extract({
-            //use: use.concat(['resolve-url-loader', 'sass-loader?sourceMap']),
-            use: ['css-loader', exports.autoprefix(), 'resolve-url-loader' ,'sass-loader?sourceMap'],
+            use: use.concat(['resolve-url-loader', 'sass-loader?sourceMap']),
             fallback: 'style-loader',
           })
         }
@@ -100,43 +100,15 @@ exports.extractCSS = ({ include, exclude, use }) => {
 
 };
 
-// exports.autoprefix = () => ({
-//   loader: 'postcss-loader',
-//   options: {
-//     plugins: () => ([
-//       require('autoprefixer'), require('postcss-focus')
-//     ]),
-//   },
-// });
-
 exports.autoprefix = () => ({
   loader: 'postcss-loader',
   options: {
-    plugins: [require('autoprefixer'), require('postcss-focus')], 
+    plugins: () => ([
+      require('autoprefixer')
+    ]),
   },
 });
 
-// exports.lintSCSS = ({ include, exclude }) => ({
-//   module: {
-//     rules: [
-//       {
-//         test: /\.scss$/,
-//         include,
-//         exclude,
-//         enforce: 'pre',
-//         loader: 'postcss-loader',
-//         options: {
-//           syntax: require('postcss-scss'),
-//           plugins: () => ([
-//             require('stylelint')({
-//               ignoreFiles: 'node_modules/**/*.scss'
-//             }),
-//           ]),
-//         },
-//       },
-//     ],
-//   },
-// });
 
 exports.lintSCSS = ({ include, exclude }) => ({
   module: {
@@ -148,10 +120,20 @@ exports.lintSCSS = ({ include, exclude }) => ({
         enforce: 'pre',
         loader: 'postcss-loader',
         options: {
-          syntax: require('postcss-scss'),
-          plugins: function() { return [ require('stylelint')({ignoreFiles: 'node_modules/**/*.scss'}) ]; } 
+          syntax: 'postcss-scss',
+          plugins: () => ([
+            require('stylelint')({
+              ignoreFiles: 'node_modules/**/*.scss'
+            }),
+          ]),
         },
       },
     ],
   },
+});
+
+exports.purifyCSS = ({ paths }) => ({
+  plugins: [
+    new PurifyCSSPlugin({ paths }),
+  ],
 });

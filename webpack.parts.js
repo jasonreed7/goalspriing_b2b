@@ -1,5 +1,12 @@
 const ExtractTextPlugin = require('extract-text-webpack-plugin');
 const PurifyCSSPlugin = require('purifycss-webpack');
+const CleanWebpackPlugin = require('clean-webpack-plugin');
+const GitRevisionPlugin = require('git-revision-webpack-plugin');
+const BabiliPlugin = require('babili-webpack-plugin');
+const OptimizeCSSAssetsPlugin = require('optimize-css-assets-webpack-plugin');
+const cssnano = require('cssnano');
+
+const webpack = require('webpack');
 
 exports.inspectLoader = {
 	loader: 'inspect-loader',
@@ -69,7 +76,7 @@ exports.loadSCSS = ({ include, exclude } = {}) => ({
 
 exports.extractCSS = ({ include, exclude, use }) => {
 	const plugin = new ExtractTextPlugin({
-		filename: '[name].css',
+		filename: '[name].[contenthash].css',
 	});
 
 	return {
@@ -106,6 +113,7 @@ exports.autoprefix = () => ({
 		plugins: () => ([
 			require('autoprefixer')
 		]),
+		sourceMap: true,
 	},
 });
 
@@ -126,6 +134,7 @@ exports.lintSCSS = ({ include, exclude }) => ({
 							ignoreFiles: 'node_modules/**/*.scss'
 						}),
 					]),
+					sourceMap: true,
 				},
 			},
 		],
@@ -194,3 +203,48 @@ exports.loadJavaScript = ({ include, exclude }) => ({
 		],
 	},
 });
+
+exports.generateSourceMaps = ({ type }) => ({
+	devtool: type,
+});
+
+exports.clean = (path) => ({
+	plugins: [
+		new CleanWebpackPlugin([path]),
+	],
+});
+
+exports.attachRevision = () => ({
+	plugins: [
+		new webpack.BannerPlugin({
+			banner: new GitRevisionPlugin().version(),
+		}),
+	],
+});
+
+exports.minifyJavaScript = () => ({
+	plugins: [
+		new BabiliPlugin(),
+	],
+});
+
+exports.minifyCSS = ({ options }) => ({
+	plugins: [
+		new OptimizeCSSAssetsPlugin({
+			cssProcessor: cssnano,
+			cssProcessorOptions: options,
+			canPrint: false,
+		}),
+	],
+});
+
+exports.setFreeVariable = (key, value) => {
+	const env = {};
+	env[key] = JSON.stringify(value);
+
+	return {
+		plugins: [
+			new webpack.DefinePlugin(env),
+		],
+	};
+};

@@ -1,0 +1,14 @@
+- glob vs glob-all
+Pretty much resolved: use glob-all
+
+- Use babel-polyfill if needed-
+See https://survivejs.com/webpack/loading/javascript/
+
+Skipped bundle splitting and code splitting stuff from book (https://survivejs.com/webpack/preface/)
+After doing this can also do separating a manifest
+
+Skipped enabling a performance budget (https://survivejs.com/webpack/optimizing/minifying/)
+
+Skipped Analyzing build statistics and Performance
+
+My loadFonts is different from book's loadFonts

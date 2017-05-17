@@ -1,0 +1,27 @@
+@font-face{
+    font-family:"Proxima Nova Light";
+    src:url("../Fonts/1132144/93cc6d34-798e-42c8-87d2-fd6391801b63.eot?#iefix");
+    src:url("../Fonts/1132144/93cc6d34-798e-42c8-87d2-fd6391801b63.eot?#iefix") format("eot"),url("../Fonts/1132144/d9fe41ee-4904-4a11-ba11-b61cd3be767f.woff2") format("woff2"),url("../Fonts/1132144/2fa30669-9bbd-4ced-912f-db94a367ed6c.woff") format("woff"),url("../Fonts/1132144/c12b3ebb-3771-483f-a84a-ac63d615c28e.ttf") format("truetype");
+}
+@font-face{
+    font-family:"Proxima Nova Condensed Light";
+    src:url("../Fonts/1132231/a626ba6a-dd6c-4ac1-b3be-22e92cf6f89a.eot?#iefix");
+    src:url("../Fonts/1132231/a626ba6a-dd6c-4ac1-b3be-22e92cf6f89a.eot?#iefix") format("eot"),url("../Fonts/1132231/228212a3-35ca-4dca-b8a4-b5ce4f0a489b.woff2") format("woff2"),url("../Fonts/1132231/b32c1fcd-5953-485f-97f6-db39b891e917.woff") format("woff"),url("../Fonts/1132231/9f302ff2-5c3c-4096-a1b3-8f28920ce2b5.ttf") format("truetype");
+}
+@font-face{
+    font-family:"Proxima Nova Condensed Bold";
+    src:url("../Fonts/1132267/dbbb35ad-07f2-4848-a204-f4aa0f13a1ed.eot?#iefix");
+    src:url("../Fonts/1132267/dbbb35ad-07f2-4848-a204-f4aa0f13a1ed.eot?#iefix") format("eot"),url("../Fonts/1132267/b5a71150-9cc6-412c-a234-f1c2cbcd738f.woff2") format("woff2"),url("../Fonts/1132267/604b74f3-0c1d-45e1-baf0-f3608ae91fce.woff") format("woff"),url("../Fonts/1132267/ea67d4db-c657-4fd9-a406-19f659fb0cab.ttf") format("truetype");
+}
+
+body {
+	font-family: "Proxima Nova Light", sans-serif;
+}
+
+.text-condensed {
+	font-family: "Proxima Nova Condensed Light", sans-serif;
+}
+
+.text-bold {
+	font-family: "Proxima Nova Condensed Bold", sans-serif;
+}

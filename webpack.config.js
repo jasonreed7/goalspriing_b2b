@@ -24,13 +24,14 @@ const commonConfig =  merge([
 		plugins: [
 			new HTMLWebpackPlugin({
 				title: 'Goalspriing',
-				template: 'app/index.ejs',
+				template: '!!html-loader!app/index.ejs',
 			}),
 		],
 	},
 	parts.lintJavaScript({ include: PATHS.app }),
 	parts.lintSCSS({ include: PATHS.app }),
 	parts.loadJavaScript({ include: PATHS.app }),
+	// parts.loadHTML({ include: PATHS.app }),
 ]);
 
 const productionConfig = merge([

@@ -74,6 +74,19 @@ exports.loadSCSS = ({ include, exclude } = {}) => ({
 	},
 });
 
+exports.loadHTML = ({ include, exclude } = {}) => ({
+	module: {
+		rules: [
+			{
+				test: /\.ejs$/,
+				include,
+				exclude,
+				use: ['html-loader'],
+			},
+		],
+	},
+});
+
 exports.extractCSS = ({ include, exclude, use }) => {
 	const plugin = new ExtractTextPlugin({
 		filename: '[name].[contenthash].css',

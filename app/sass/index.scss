@@ -1,4 +1,5 @@
 @import "fonts";
+@import "colors";
 
 section {
 	background-size: cover;
@@ -16,19 +17,32 @@ section {
 	justify-content: center;
 }
 
+.page-white-background {
+	border-bottom: 10px solid $green;
+	position: relative;
+}
+
+.page-gray-background {
+	background-color: $gray;
+}
+
 .row {
 	display: flex;
 	justify-content: center;
+	position: relative;
 }
 
 .page-heading {
-	margin-bottom: 40px;
+	margin-bottom: 55px;
 }
 
-.half-page-img-lg,
+.half-page-image-lg,
 .half-page-text-lg {
 	width: 50%;
-	max-width: 620px;
+}
+
+.half-page-image-lg {
+	text-align: right;
 }
 
 .half-page-text-lg {
@@ -38,8 +52,24 @@ section {
 	box-sizing: border-box;
 }
 
+.half-page-text-lg p {
+	max-width: 360px;
+}
+
 #hero {
 	background-image: url("../images/hero-background.png");
+}
+
+#coaches {
+	background-image: url("../images/coaches-background.png");
+}
+
+#testimonials {
+	background-image: url("../images/testimonials-dave-background.png");
+}
+
+#clients {
+	background-image: url("../images/clients-background.png");
 }
 
 .hero-text {
@@ -69,41 +99,23 @@ section {
 	left: 43.5px;
 }
 
-.text-xs {
-	font-size: 14px;
+.price {
+	position: absolute;
+	left: 50%;
+	top: 160px;
+	margin-left: -82px;
 }
 
-.text-sm {
-	font-size: 22px;
-}
-
-
-.text-md {
-	font-size: 34px;
-}
-
-.text-lg {
-	font-size: 64px;
-}
-
-.text-xl {
-	font-size: 122px;
-}
-
-.text-left {
+.images-bottom-container {
+	width: 50%;
+	position: absolute;
+	left: 50%;
+	bottom: -38px;
 	text-align: left;
+	padding-left: 8px;
 }
 
-.text-center {
-	text-align: center;
-}
-
-$green: #aac537;
-
-.text-white {
-	color: white;
-}
-
-.text-green {
-	color: $green;
+.image-bottom {
+	display: inline-block;
+	margin: 0 3.5px;
 }

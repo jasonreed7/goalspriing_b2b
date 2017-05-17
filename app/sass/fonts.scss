@@ -1,3 +1,5 @@
+@import "colors";
+
 @font-face{
     font-family:"Proxima Nova Light";
     src:url("../Fonts/1132144/93cc6d34-798e-42c8-87d2-fd6391801b63.eot?#iefix");
@@ -24,4 +26,41 @@ body {
 
 .text-bold {
 	font-family: "Proxima Nova Condensed Bold", sans-serif;
+}
+
+.text-xs {
+    font-size: 14px;
+}
+
+.text-sm {
+    font-size: 22px;
+}
+
+
+.text-md {
+    font-size: 34px;
+}
+
+.text-lg {
+    font-size: 64px;
+}
+
+.text-xl {
+    font-size: 122px;
+}
+
+.text-left {
+    text-align: left;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.text-white {
+    color: white;
+}
+
+.text-green {
+    color: $green;
 }

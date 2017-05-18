@@ -119,3 +119,26 @@ section {
 	display: inline-block;
 	margin: 0 3.5px;
 }
+
+.clients-copy {
+	max-width: 615px;
+	margin: 0 auto;
+	line-height: 44px;
+	margin-bottom: 80px;
+}
+
+.clients-heading {
+	margin-bottom: 25px;
+}
+
+.quote-box {
+	max-width: 880px;
+	padding: 45px 50px 20px;
+	border: 10px solid $green;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.quote-box-author {
+	margin-top: 5px;
+}

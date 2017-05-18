@@ -1,5 +1,7 @@
 @import "colors";
 
+$line-height-copy: 44px;
+
 @font-face{
     font-family:"Proxima Nova Light";
     src:url("../Fonts/1132144/93cc6d34-798e-42c8-87d2-fd6391801b63.eot?#iefix");
@@ -63,4 +65,8 @@ body {
 
 .text-green {
     color: $green;
+}
+
+.line-height-copy {
+    line-height: $line-height-copy;
 }

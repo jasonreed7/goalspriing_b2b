@@ -3,6 +3,7 @@
 @import "fonts";
 @import "colors";
 @import "slider";
+@import "breakpoints";
 
 section {
 	background-size: cover;
@@ -105,7 +106,7 @@ section {
 .price {
 	position: absolute;
 	left: 50%;
-	top: 160px;
+	top: 190px;
 	margin-left: -82px;
 }
 
@@ -113,7 +114,7 @@ section {
 	width: 50%;
 	position: absolute;
 	left: 50%;
-	bottom: -38px;
+	bottom: -35px;
 	text-align: left;
 	padding-left: 8px;
 }
@@ -144,4 +145,68 @@ section {
 
 .quote-box-author {
 	margin-top: 5px;
+}
+
+// Fix spacing
+#coaches .section-content {
+	padding-top: 62px;
+}
+
+#how-it-works .row {
+	padding-bottom: 116px;
+}
+
+#pricing {
+	height: 880px;
+}
+
+#pricing .section-content {
+	padding-bottom: 145px;
+}
+
+#pricing .images-bottom-container {
+	bottom: -28px;
+}
+
+#clients .section-content {
+	padding-bottom: 90px;
+}
+
+#team {
+	height: initial;
+}
+
+// Team slider
+@media screen and (min-width: $desktopMinWidth) {
+	.team-item-container {
+		display: inline-block;
+		width: 33.3%;
+	}
+
+	.team-description {
+		max-width: 300px;
+		margin-left: auto;
+		margin-right: auto;
+	}
+}
+
+@media screen and (max-width: $mobileMaxWidth) {
+	.team-picture {
+		margin-left: auto;
+		margin-right: auto;
+	}
+}
+
+.team-name {
+	font-size: 18px;
+}
+
+.team-title {
+	font-size: 16px;
+	font-style: italic;
+}
+
+.team-description {
+	font-size: 15px;
+	color: #818181;
 }

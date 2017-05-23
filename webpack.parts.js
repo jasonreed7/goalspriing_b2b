@@ -34,7 +34,7 @@ exports.lintJavaScript = ({ include, exclude, options }) => ({
 	module: {
 		rules: [
 			{
-				test: /\.js$/,
+				test: /\.jsx?$/,
 				include,
 				exclude,
 				enforce: 'pre',
@@ -164,7 +164,7 @@ exports.loadImages = ({ include, exclude, options } = {}) => ({
 	module: {
 		rules: [
 			{
-				test: /\.(png|jpg|svg)$/,
+				test: /\.(png|jpg|svg|gif)$/,
 				include,
 				exclude,
 
@@ -199,7 +199,7 @@ exports.loadJavaScript = ({ include, exclude }) => ({
 	module: {
 		rules: [
 			{
-				test: /\.js$/,
+				test: /\.jsx?$/,
 				include,
 				exclude,
 

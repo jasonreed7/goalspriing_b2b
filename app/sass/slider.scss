@@ -1,0 +1,59 @@
+@import "breakpoints";
+
+@media screen and (max-width: $mobileMaxWidth) {
+	.slick-dots li .coach-slider-dot-desktop {
+		display: none;
+	}
+}
+
+@media screen and (min-width: $desktopMinWidth) {
+	.coach-slider-dot-mobile {
+		display: none;
+	}
+}
+
+.coach-slider-dot-desktop {
+	filter: grayscale(100%);
+}
+
+li.slick-active .coach-slider-dot-desktop {
+	filter: none;
+}
+
+.coach-slider-dot-desktop img {
+	width: 120px;
+}
+
+.coach-slider-dots {
+	text-align: center;
+	padding-left: 0;
+}
+
+.coach-slider-dots li {
+	display: inline-block;
+	width: 167px;
+	margin-top: 130px;
+}
+
+.coach-description {
+	max-width: 1200px;
+	margin-left: auto;
+	margin-right: auto;
+	padding-left: 30px;
+	padding-right: 30px;
+}
+
+.coach-description,
+.coach-title {
+	line-height: 44px;
+}
+
+.coach-name {
+	line-height: 66px;
+	margin-bottom: 6px;
+	margin-top: 30px;
+}
+
+.coach-title {
+	margin-bottom: 18px;
+}

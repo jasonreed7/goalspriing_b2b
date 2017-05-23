@@ -6,7 +6,7 @@
   "scripts": {
     "lint:style": "stylelint app/**/*.scss",
     "lint:js": "eslint app/ webpack.*.js --cache",
-    "start": "nodemon --watch webpack.config.js --exec \"webpack-dev-server --env development\"",
+    "start": "nodemon --watch webpack.config.js --exec \"webpack-dev-server --env development --info\"",
     "//": "webpack-dev-server --env development",
     "teststart": "webpack-dev-server --config webpack.development.js --env development",
     "testbuild": "webpack --config webpack.production.js --env production",
@@ -15,19 +15,25 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "normalize.css": "^7.0.0"
+    "normalize.css": "^7.0.0",
+    "react": "^15.5.4",
+    "react-dom": "^15.5.4",
+    "react-slick": "^0.14.11",
+    "slick-carousel": "^1.6.0"
   },
   "devDependencies": {
     "autoprefixer": "^7.0.1",
     "babel-core": "^6.24.1",
     "babel-loader": "^7.0.0",
     "babel-preset-env": "^1.4.0",
+    "babel-preset-react": "^6.24.1",
     "babili-webpack-plugin": "0.0.11",
     "clean-webpack-plugin": "^0.1.16",
     "css-loader": "^0.28.1",
     "cssnano": "^3.10.0",
     "eslint": "^3.19.0",
     "eslint-loader": "^1.7.1",
+    "eslint-plugin-react": "^7.0.1",
     "extract-text-webpack-plugin": "^2.1.0",
     "file-loader": "^0.11.1",
     "git-revision-webpack-plugin": "^2.5.1",

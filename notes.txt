@@ -12,3 +12,6 @@ Skipped enabling a performance budget (https://survivejs.com/webpack/optimizing/
 Skipped Analyzing build statistics and Performance
 
 My loadFonts is different from book's loadFonts
+
+Getting rid of side-scrolling: Make .slick-arrow display: none- might have to use important
+Also something else is overflowing

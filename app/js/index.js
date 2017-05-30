@@ -4,6 +4,7 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import CoachSlider from './components/CoachSlider/CoachSlider.jsx';
 import TeamSlider from './components/TeamSlider/TeamSlider.jsx';
+import ContactForm from './components/ContactForm/ContactForm.jsx';
 
 console.log('hi');
 
@@ -15,3 +16,4 @@ a();
 
 ReactDOM.render(<CoachSlider />, document.getElementById('coach-slider-container'));
 ReactDOM.render(<TeamSlider />, document.getElementById('team-slider-container'));
+ReactDOM.render(<ContactForm />, document.getElementById('contact-form-container'));

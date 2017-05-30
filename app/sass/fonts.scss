@@ -18,7 +18,8 @@ $line-height-copy: 44px;
     src:url("../Fonts/1132267/dbbb35ad-07f2-4848-a204-f4aa0f13a1ed.eot?#iefix") format("eot"),url("../Fonts/1132267/b5a71150-9cc6-412c-a234-f1c2cbcd738f.woff2") format("woff2"),url("../Fonts/1132267/604b74f3-0c1d-45e1-baf0-f3608ae91fce.woff") format("woff"),url("../Fonts/1132267/ea67d4db-c657-4fd9-a406-19f659fb0cab.ttf") format("truetype");
 }
 
-body {
+body,
+.text-light {
 	font-family: "Proxima Nova Light", sans-serif;
 }
 

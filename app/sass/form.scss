@@ -1,0 +1,31 @@
+@import "colors";
+
+.contact-form-container {
+	max-width: 600px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.contact-form-row {
+	margin-bottom: 20px;
+}
+
+.contact-form-input,
+.contact-form-textarea,
+.contact-form-button {
+	box-sizing: border-box;
+	width: 100%;
+	padding: 20px 15px;
+}
+
+.contact-form-button {
+	background-color: black;
+	border: none;
+	cursor: pointer;
+}
+
+.contact-form-input::placeholder,
+.contact-form-textarea::placeholder {
+	color: $gray;
+	opacity: 0.5;
+}

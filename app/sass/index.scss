@@ -4,6 +4,7 @@
 @import "colors";
 @import "slider";
 @import "breakpoints";
+@import "form";
 
 section {
 	background-size: cover;
@@ -213,7 +214,7 @@ section {
 	margin-bottom: 5px;
 }
 
-.team-name, 
+.team-name,
 .team-title {
 	line-height: 20px;
 }
@@ -273,4 +274,8 @@ section {
 
 .contact-subheading {
 	margin-bottom: 35px;
+}
+
+.contact-row {
+	margin-bottom: 40px;
 }

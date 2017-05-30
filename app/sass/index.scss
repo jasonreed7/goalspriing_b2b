@@ -177,6 +177,12 @@ section {
 }
 
 // Team slider
+.team-slider-container {
+	max-width: 1500px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
 @media screen and (min-width: $desktopMinWidth) {
 	.team-item-container {
 		display: inline-block;
@@ -204,9 +210,67 @@ section {
 .team-title {
 	font-size: 16px;
 	font-style: italic;
+	margin-bottom: 5px;
+}
+
+.team-name, 
+.team-title {
+	line-height: 20px;
 }
 
 .team-description {
 	font-size: 15px;
 	color: #818181;
+}
+
+.team-picture-container {
+	margin-bottom: 10px;
+	position: relative;
+}
+
+.team-item-container {
+	padding: 40px 0;
+	cursor: pointer;
+}
+
+.team-text-overlay {
+	background-color: rgba(255, 255, 255, 0.9);
+	position: absolute;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	display: none;
+	flex-direction: column;
+	justify-content: center;
+}
+
+.team-item-container:hover .team-text-overlay,
+.team-item-container:focus .team-text-overlay {
+	display: flex;
+}
+
+.team-item-container:hover .team-text,
+.team-item-container:focus .team-text {
+	visibility: hidden;
+}
+
+.page-non-flex {
+	padding-top: 90px;
+	padding-bottom: 85px;
+}
+
+.contact-half-row-left {
+	padding-right: 20px;
+}
+
+.contact-half-row-right {
+	padding-left: 20px;
+}
+
+#contact .page-heading {
+	margin-bottom: 45px;
+}
+
+.contact-subheading {
+	margin-bottom: 35px;
 }

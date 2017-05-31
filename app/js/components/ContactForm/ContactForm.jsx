@@ -11,7 +11,8 @@ export default class ContactForm extends React.Component {
 			message: '',
 			nameError: false,
 			emailError: false,
-			messageError: false
+			messageError: false,
+			submitted: false
 		};
 
 		this.handleNameChange = this.handleNameChange.bind(this);
@@ -35,7 +36,6 @@ export default class ContactForm extends React.Component {
 
 	handleSubmit(event) {
 
-
 		event.preventDefault();
 
 		var name = this.state.name;
@@ -58,7 +58,9 @@ export default class ContactForm extends React.Component {
 			return;
 		}
 
-		// If valid inputs, send request
+		// If valid inputs, send request and set submitted to true
+
+		this.setState({ submitted: true });
 
 		var data = JSON.stringify({
 			CompanyName: '',
@@ -108,6 +110,17 @@ export default class ContactForm extends React.Component {
 	}
 
 	render() {
+
+		// If submitted return thank you message
+		if(this.state.submitted) {
+			return (
+				<div className="contact-form-container">
+					<div className="contact-thanks-message text-sm text-white">
+						Thank you for contacting us. You&apos;ll hear from us within a day.
+					</div>
+				</div>
+			);
+		}
 
 		var errorMessage = this.getErrorMessage();
 

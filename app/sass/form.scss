@@ -29,3 +29,20 @@
 	color: $gray;
 	opacity: 0.5;
 }
+
+.input-error {
+	border: 3px solid $error-red;
+}
+
+.contact-form-submit-row {
+	position: relative;
+	margin-bottom: 0;
+}
+
+.error-message {
+	background-color: $error-red;
+	padding: 10px;
+	display: inline-block;
+	position: relative;
+	bottom: 15px;
+}

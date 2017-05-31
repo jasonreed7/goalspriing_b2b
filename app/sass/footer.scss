@@ -1,0 +1,38 @@
+@import "colors";
+
+footer {
+	background-color: $gray;
+}
+
+.footer-content {
+	width: 1250px;
+	max-width: 90%;
+	margin-left: auto;
+	margin-right: auto;
+	padding-top: 28px;
+	padding-bottom: 23px;
+	border-top: 1px solid $green;
+}
+
+.footer-left,
+.footer-right,
+.footer-link-container {
+	display: inline-block;
+}
+
+.footer-right {
+	float: right;
+}
+
+.footer-link-container {
+	padding-left: 18px;
+	padding-right: 18px;
+}
+
+.footer-link-container-last {
+	padding-right: 0;
+}
+
+.footer-link {
+	text-decoration: none;
+}

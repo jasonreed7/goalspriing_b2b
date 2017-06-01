@@ -115,8 +115,9 @@ export default class ContactForm extends React.Component {
 		if(this.state.submitted) {
 			return (
 				<div className="contact-form-container">
-					<div className="contact-thanks-message text-sm text-white">
-						Thank you for contacting us. You&apos;ll hear from us within a day.
+					<div className="contact-thanks-message text-md text-white">
+						Thank you for contacting us. <br />
+						You&apos;ll hear from us within a day.
 					</div>
 				</div>
 			);

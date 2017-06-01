@@ -1,45 +1,65 @@
 @import "breakpoints";
 
 @media screen and (max-width: $mobileMaxWidth) {
-	.slick-dots li .coach-slider-dot-desktop {
+	.slick-dots li .coach-slider-dot-desktop,
+	.slick-dots li .testimonial-slider-dot-desktop {
 		display: none;
 	}
 }
 
 @media screen and (min-width: $desktopMinWidth) {
-	.coach-slider-dot-mobile {
+	.coach-slider-dot-mobile,
+	.testimonial-slider-dot-mobile {
 		display: none;
 	}
 }
 
-.coach-slider-dot-desktop {
+.coach-slider-dot-desktop,
+.testimonial-slider-dot-desktop {
 	filter: grayscale(100%);
 }
 
-li.slick-active .coach-slider-dot-desktop {
+li.slick-active .coach-slider-dot-desktop,
+li.slick-active .testimonial-slider-dot-desktop {
 	filter: none;
 }
 
-.coach-slider-dot-desktop {
+.testimonial-slider-dot-desktop img {
+	border-radius: 500px;
+	border: 3px solid white;
+	background: white;
+}
+
+li.slick-active .testimonial-slider-dot-desktop img {
+	border: 3px solid $green;
+	background: $green;
+}
+
+.coach-slider-dot-desktop,
+.testimonial-slider-dot-desktop {
 	cursor: pointer;
 }
 
-.coach-slider-dot-desktop img {
+.coach-slider-dot-desktop img,
+.testimonial-slider-dot-desktop img {
 	width: 120px;
 }
 
-.coach-slider-dots {
+.coach-slider-dots,
+.testimonial-slider-dots {
 	text-align: center;
 	padding-left: 0;
 }
 
-.coach-slider-dots li {
+.coach-slider-dots li,
+.testimonial-slider-dots li {
 	display: inline-block;
 	width: 167px;
 	margin-top: 130px;
 }
 
-.coach-description {
+.coach-description,
+.testimonial-blurb {
 	max-width: 1200px;
 	margin-left: auto;
 	margin-right: auto;
@@ -48,7 +68,8 @@ li.slick-active .coach-slider-dot-desktop {
 }
 
 .coach-description,
-.coach-title {
+.coach-title,
+.testimonial-blurb {
 	line-height: 44px;
 }
 
@@ -60,4 +81,43 @@ li.slick-active .coach-slider-dot-desktop {
 
 .coach-title {
 	margin-bottom: 18px;
+}
+
+.testimonial-item-diane {
+	background-image: url("../images/testimonials/backgrounds/diane.png");
+}
+
+.testimonial-item-emma {
+	background-image: url("../images/testimonials/backgrounds/emma.png");
+}
+
+.testimonial-item-dave {
+	background-image: url("../images/testimonials/backgrounds/dave.png");
+}
+
+.testimonial-blurb {
+	margin-bottom: 55px;
+}
+
+.testimonial-item {
+	padding-top: 160px;
+	padding-bottom: 280px;
+	background-size: cover;
+	background-position: center center;
+	cursor: pointer;
+}
+
+#testimonials {
+	height: initial;
+}
+
+#testimonials .page-heading {
+	margin-bottom: 42px;
+}
+
+.testimonial-slider-dots {
+	position: absolute;
+	bottom:50px;
+	left: 50%;
+	margin-left: -250.5px;
 }

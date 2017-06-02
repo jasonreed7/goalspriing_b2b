@@ -31,7 +31,6 @@ const commonConfig =  merge([
 	parts.lintJavaScript({ include: PATHS.app }),
 	parts.lintSCSS({ include: PATHS.app }),
 	parts.loadJavaScript({ include: PATHS.app }),
-	parts.loadSVG(),
 	// parts.loadHTML({ include: PATHS.app }),
 ]);
 

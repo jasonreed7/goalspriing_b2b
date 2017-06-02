@@ -53,15 +53,25 @@
 }
 
 .menu {
-	background-color: $green;
+	background-color: rgba(170, 197, 55, 0.97);
     position: absolute;
     top: 0;
     width: 100%;
     z-index: 10;
-    padding-top: 50px;
+    padding-top: 60px;
+    padding-bottom: 30px;
 }
 
 .top-nav-fixed .nav-logo {
 	opacity: 0;
 	transition: opacity 0s;
+}
+
+.menu-link {
+	color: white;
+	text-decoration: none;
+}
+
+.menu-item {
+	margin-bottom: 21px;
 }

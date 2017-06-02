@@ -164,7 +164,7 @@ exports.loadImages = ({ include, exclude, options } = {}) => ({
 	module: {
 		rules: [
 			{
-				test: /\.(png|jpg|gif)$/,
+				test: /\.(png|jpg|svg|gif)$/,
 				include,
 				exclude,
 
@@ -175,17 +175,6 @@ exports.loadImages = ({ include, exclude, options } = {}) => ({
 			},
 		],
 	},
-});
-
-exports.loadSVG = () => ({
-	module: {
-		rules: [
-			{
-				test: /\.svg$/,
-				use: 'file-loader',
-			}
-		]
-	}
 });
 
 exports.loadFonts = ({ include, exclude, options } = {}) => ({

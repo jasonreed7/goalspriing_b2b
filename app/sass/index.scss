@@ -9,6 +9,9 @@
 
 $hamburger-layer-color: white;
 $hamburger-padding-y: 10px;
+$hamburger-layer-width: 24px;
+$hamburger-layer-height: 4px;
+$hamburger-layer-spacing: 4px;
 
 @import "~hamburgers/_sass/hamburgers/hamburgers";
 
@@ -211,13 +214,14 @@ section {
 }
 
 .team-name {
-	font-size: 18px;
+	font-size: 22px;
+	margin-bottom: 4px;
 }
 
 .team-title {
-	font-size: 16px;
+	font-size: 19px;
 	font-style: italic;
-	margin-bottom: 5px;
+	margin-bottom: 8px;
 }
 
 .team-name,
@@ -226,8 +230,12 @@ section {
 }
 
 .team-description {
-	font-size: 15px;
+	font-size: 18px;
 	color: #818181;
+}
+
+.team-picture {
+	width: 245px;
 }
 
 .team-picture-container {
@@ -290,4 +298,8 @@ section {
 	padding-bottom: 100px;
 	min-height: initial;
 	height: initial;
+}
+
+button:focus {
+	outline: 0;
 }

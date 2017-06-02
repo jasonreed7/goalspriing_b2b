@@ -54,7 +54,30 @@ export default class TopNav extends React.Component {
 		if(this.state.open) {
 			menu = (
 				<nav key="menu" className={'menu ' + (this.state.open ? 'menu-open' : '')}>
-					<div className="text-center">sup</div>
+					<div className="menu-item text-sm text-center">
+						<a href="#about" className="menu-link text-condensed">ABOUT</a>
+					</div>
+					<div className="menu-item text-sm text-center">
+						<a href="#coaches" className="menu-link text-condensed">OUR COACHES</a>
+					</div>
+					<div className="menu-item text-sm text-center">
+						<a href="#how-it-works" className="menu-link text-condensed">HOW IT WORKS</a>
+					</div>
+					<div className="menu-item text-sm text-center">
+						<a href="#testimonials" className="menu-link text-condensed">TESTIMONIALS</a>
+					</div>
+					<div className="menu-item text-sm text-center">
+						<a href="#pricing" className="menu-link text-condensed">PRICING</a>
+					</div>
+					<div className="menu-item text-sm text-center">
+						<a href="#clients" className="menu-link text-condensed">CLIENTS</a>
+					</div>
+					<div className="menu-item text-sm text-center">
+						<a href="#team" className="menu-link text-condensed">TEAM</a>
+					</div>
+					<div className="menu-item text-sm text-center">
+						<a href="#contact" className="menu-link text-condensed">CONTACT</a>
+					</div>
 				</nav>
 			);
 		}

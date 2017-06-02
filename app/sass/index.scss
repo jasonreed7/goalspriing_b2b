@@ -157,6 +157,26 @@ section {
 	margin-top: 5px;
 }
 
+.client-logos {
+	max-width: 90%;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 90px;
+	text-align: center;
+}
+
+.client-row {
+	display: inline-block;
+}
+
+.client-logo-container {
+	display: inline-block;
+}
+
+.client-logo {
+	height: 30px;
+}
+
 // Fix spacing
 #coaches .section-content {
 	padding-top: 62px;
@@ -179,7 +199,8 @@ section {
 }
 
 #clients .section-content {
-	padding-bottom: 90px;
+	padding-top: 48px;
+	padding-bottom: 0;
 }
 
 #team {

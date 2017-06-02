@@ -31,6 +31,7 @@ const commonConfig =  merge([
 	parts.lintJavaScript({ include: PATHS.app }),
 	parts.lintSCSS({ include: PATHS.app }),
 	parts.loadJavaScript({ include: PATHS.app }),
+	parts.loadSVG(),
 	// parts.loadHTML({ include: PATHS.app }),
 ]);
 
@@ -59,9 +60,9 @@ const productionConfig = merge([
 	}),
 	parts.generateSourceMaps({ type: 'source-map' }),
 	parts.extractCSS({ use: ['css-loader', parts.autoprefix()] }),
-	parts.purifyCSS({
-		paths: glob.sync([`${PATHS.app}/**/*.js`, `${PATHS.app}/*.ejs`], {nodir: true}),
-	}),
+	// parts.purifyCSS({
+	// 	paths: glob.sync([`${PATHS.app}/**/*.js`, `${PATHS.app}/*.ejs`], {nodir: true}),
+	// }),
 	parts.loadImages({
 		options: {
 			limit: 15000,

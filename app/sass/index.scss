@@ -7,6 +7,15 @@
 @import "form";
 @import "footer";
 
+$hamburger-layer-color: white;
+$hamburger-padding-y: 10px;
+
+@import "~hamburgers/_sass/hamburgers/hamburgers";
+
+@import "nav";
+
+
+
 section {
 	background-size: cover;
 	background-position: center center;

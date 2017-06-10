@@ -2,13 +2,13 @@ import React from 'react';
 
 import Slider from 'react-slick';
 
-import matthewPic from '../../../images/coaches/circles/Matthew_Laffer.png';
+import davidPic from '../../../images/coaches/circles/David_Matthew_Prior.png';
 import beatricePic from '../../../images/coaches/circles/Beatrice_Leon.png';
 import dwightPic from '../../../images/coaches/circles/Dwight_Conley.png';
-import bethPic from '../../../images/coaches/circles/Beth_Gladis.png';
-import alioncaPic from '../../../images/coaches/circles/Alionka_Polanco.png';
+import erinPic from '../../../images/coaches/circles/Erin_Nicole_Smith.png';
+import matthewPic from '../../../images/coaches/circles/Matthew_Laffer.png';
 
-var coachDots = [matthewPic, beatricePic, dwightPic, bethPic, alioncaPic];
+var coachDots = [davidPic, beatricePic, dwightPic, erinPic, matthewPic];
 
 export default class CoachSlider extends React.Component {
 
@@ -38,43 +38,35 @@ export default class CoachSlider extends React.Component {
 		return (
 			<Slider {...settings} >
 				<div className="text-center text-white">
-					<div className="text-lg coach-name">Matthew</div>
-					<div className="text-sm coach-title">Founder and CEO</div>
+					<div className="text-lg coach-name">David</div>
+					<div className="text-sm coach-title">Learning & Development</div>
 					<div className="text-md coach-description">
-						Matthew is a 3x entrepreneur with a successful track record of building great
-						companies that foster healthy living and enhanced quality of life for people all
-						around the world.
+						David is a pioneer of the coaching industry and teaches coaching at Columbia University.
 					</div>
 				</div>
 				<div className="text-center text-white">
 					<div className="text-lg coach-name">Beatrice</div>
-					<div className="text-sm coach-title">Founder and CEO</div>
+					<div className="text-sm coach-title">Chief Information Officer</div>
 					<div className="text-md coach-description">
-						Matthew is a 3x entrepreneur with a successful track record of building great
-						companies that foster healthy living and enhanced quality of life for people all
-						around the world.
+						Beatrice is an accomplished IT executive with over 30 years of experience. Oh, and she is also a black belt in Karate and has sailed around the world.
 					</div>
 				</div>
 				<div className="text-center text-white">
 					<div className="text-lg coach-name">Dwight</div>
-					<div className="text-sm coach-title">Founder and CEO</div>
+					<div className="text-sm coach-title">Athlete Turned Coach</div>
 					<div className="text-md coach-description">
-						Matthew is a 3x entrepreneur with a successful track record of building great
-						companies that foster healthy living and enhanced quality of life for people all
-						around the world.
+						Dwight is an athlete turned coach. His path to coaching began on the football field and then as a mentor to youth in South Central Los Angeles.
 					</div>
 				</div>
 				<div className="text-center text-white">
-					<div className="text-lg coach-name">Beth</div>
-					<div className="text-sm coach-title">Founder and CEO</div>
+					<div className="text-lg coach-name">Erin</div>
+					<div className="text-sm coach-title">Human Flourishing</div>
 					<div className="text-md coach-description">
-						Matthew is a 3x entrepreneur with a successful track record of building great
-						companies that foster healthy living and enhanced quality of life for people all
-						around the world.
+						Erin has her Master&apos;s in Applied Positive Psychology and she integrates Eastern philosophies with Western Science to help facilitate human flourishing
 					</div>
 				</div>
 				<div className="text-center text-white">
-					<div className="text-lg coach-name">Alionka</div>
+					<div className="text-lg coach-name">Matthew</div>
 					<div className="text-sm coach-title">Founder and CEO</div>
 					<div className="text-md coach-description">
 						Matthew is a 3x entrepreneur with a successful track record of building great

@@ -22,17 +22,7 @@ $hamburger-layer-spacing: 4px;
 section {
 	background-size: cover;
 	background-position: center center;
-	height: 900px;
-}
-
-.hero-container, .page {
-	display: flex;
-	flex-direction: column;
-	justify-content: space-around;
-}
-
-.page {
-	justify-content: center;
+	//height: 900px;
 }
 
 .page-white-background {
@@ -54,6 +44,12 @@ section {
 	margin-bottom: 55px;
 }
 
+.page-white-background .section-content {
+	max-width: 1600px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
 .half-page-image-lg,
 .half-page-text-lg {
 	width: 50%;
@@ -63,8 +59,14 @@ section {
 	text-align: right;
 }
 
+.half-page-image-lg img {
+	max-width: 90%;
+}
+
 .half-page-text-lg {
-	padding: 0 100px;
+	padding: 0;
+	padding-left: 6.25%;
+	padding-right: 20px;
 	line-height: 44px;
 	margin-top: -27px;
 	box-sizing: border-box;
@@ -90,7 +92,7 @@ section {
 	max-width: 650px;
 	margin: 0 auto;
 	margin-bottom: 140px;
-	padding-top: 40px;
+	line-height: 66px;
 }
 
 .play-button {
@@ -120,7 +122,15 @@ section {
 	margin-left: -82px;
 }
 
-.images-bottom-container {
+@media screen and (max-width: 1150px) {
+	.price {
+		top: 144px;
+		margin-left: -43px;
+		font-size: 64px;
+	}
+}
+
+/*.images-bottom-container {
 	width: 50%;
 	position: absolute;
 	left: 50%;
@@ -131,6 +141,24 @@ section {
 
 .image-bottom {
 	display: inline-block;
+	margin: 0 3.5px;
+}*/
+
+.images-bottom-container {
+    padding-left: 50%;
+    margin-left: 3.5px;
+    position: relative;
+    top: -15px;
+    margin-bottom: -55px;
+    z-index: 10;
+}
+
+.image-bottom {
+	display: inline-block;
+	margin: 0 3.5px;
+}
+
+.images-bottom-container img {
 	margin: 0 3.5px;
 }
 
@@ -146,7 +174,8 @@ section {
 }
 
 .quote-box {
-	max-width: 880px;
+	width: 880px;
+	max-width: 80%;
 	padding: 45px 50px 20px;
 	border: 10px solid $green;
 	margin-left: auto;
@@ -175,32 +204,59 @@ section {
 
 .client-logo {
 	height: 30px;
+	max-width: 100%;
+}
+
+@media screen and (max-width: 1326px) {
+	.client-row {
+		width: 100%;
+	}
+
+	.client-logo-container {
+		width: 19%;
+	}
 }
 
 // Fix spacing
+#hero {
+	padding-top: 203px;
+	height: 900px;
+	box-sizing: border-box;
+}
+
+#about {
+	padding-top: 155px;
+	padding-bottom: 120px;
+}
+
+#coaches {
+	padding-top: 50px;
+	padding-bottom: 60px;
+}
+
+#how-it-works {
+	padding-top: 92px;
+}
+
 #coaches .section-content {
 	padding-top: 62px;
 }
 
-#how-it-works .row {
+/*#how-it-works .row {
 	padding-bottom: 116px;
-}
+}*/
 
 #pricing {
-	height: 880px;
-}
-
-#pricing .section-content {
-	padding-bottom: 145px;
+	padding-top: 78px;
 }
 
 #pricing .images-bottom-container {
 	bottom: -28px;
 }
 
-#clients .section-content {
-	padding-top: 48px;
-	padding-bottom: 0;
+#clients {
+	padding-top: 111px;
+	padding-bottom: 70px;
 }
 
 #team {

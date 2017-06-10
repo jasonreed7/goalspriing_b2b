@@ -14,24 +14,21 @@ import daveCirclePic from '../../../images/testimonials/circles/dave.png';
 var testimonialItems = [
 	{
 		name: 'Diane Sadoski-Joseph',
-		testimonial: `Short blurb about person and experience with Goalspriing. This should not
-		exceed more than two lines or 140 characters, including spaces.`,
+		testimonial: 'Diane designs and delivers learning and development programs for rapid growth tech companies.',
 		backgroundPic: dianeBackgroundPic,
 		circlePic: dianeCirclePic,
 		className: 'testimonial-item-diane'
 	},
 	{
 		name: 'Emma Leeds',
-		testimonial: `Short blurb about person and experience with Goalspriing. This should not
-		exceed more than two lines or 140 characters, including spaces.`,
+		testimonial: 'Emma is a 3x HR business partner at private, venture-backed companies.',
 		backgroundPic: emmaBackgroundPic,
 		circlePic: emmaCirclePic,
 		className: 'testimonial-item-emma'
 	},
 	{
 		name: 'Dave Liao',
-		testimonial: `Short blurb about person and experience with Goalspriing. This should not
-		exceed more than two lines or 140 characters, including spaces.`,
+		testimonial: 'Dave is a software project manager and community builder.',
 		backgroundPic: daveBackgroundPic,
 		circlePic: daveCirclePic,
 		className: 'testimonial-item-dave'

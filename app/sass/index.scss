@@ -25,7 +25,6 @@ $hamburger-layer-spacing: 4px;
 section {
 	background-size: cover;
 	background-position: center center;
-	//height: 900px;
 }
 
 .page-white-background {
@@ -139,20 +138,6 @@ section {
 	}
 }
 
-/*.images-bottom-container {
-	width: 50%;
-	position: absolute;
-	left: 50%;
-	bottom: -35px;
-	text-align: left;
-	padding-left: 8px;
-}
-
-.image-bottom {
-	display: inline-block;
-	margin: 0 3.5px;
-}*/
-
 .images-bottom-container {
     padding-left: 50%;
     margin-left: 3.5px;
@@ -196,7 +181,7 @@ section {
 }
 
 .client-logos {
-	max-width: 90%;
+	max-width: 98%;
 	margin-left: auto;
 	margin-right: auto;
 	margin-top: 90px;
@@ -216,15 +201,16 @@ section {
 	max-width: 100%;
 }
 
-@media screen and (max-width: 1326px) {
+@media screen and (max-width: 1219px) {
 	.client-row {
-		width: 100%;
 		margin-bottom: 10px;
 	}
 
+/*
 	.client-logo-container {
 		width: 19%;
 	}
+	*/
 }
 
 // Fix spacing

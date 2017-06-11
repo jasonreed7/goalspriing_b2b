@@ -1,7 +1,6 @@
 import React from 'react';
 import Headroom from 'react-headroom';
 import { CSSTransitionGroup } from 'react-transition-group';
-//import TransitionGroup from 'react-transition-group/TransitionGroup';
 
 import logo from '../../../images/goalspriing-logos/logo-white.svg';
 
@@ -40,11 +39,14 @@ export default class TopNav extends React.Component {
 	getHeadroomStyle() {
 		if(this.state.fixed) {
 			return {
-				position: 'fixed'
+				position: 'fixed',
+				zIndex: 15
 			};
 		}
 
-		return {};
+		return {
+			zIndex: 15
+		};
 	}
 
 	render() {

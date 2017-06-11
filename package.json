@@ -6,8 +6,7 @@
   "scripts": {
     "lint:style": "stylelint app/**/*.scss",
     "lint:js": "eslint app/ webpack.*.js --cache",
-    "start": "nodemon --watch webpack.config.js --exec \"webpack-dev-server --env development --info\"",
-    "//": "webpack-dev-server --env development",
+    "start": "nodemon --watch webpack.config.js --exec \"webpack-dev-server --env development\"",
     "teststart": "webpack-dev-server --config webpack.development.js --env development",
     "testbuild": "webpack --config webpack.production.js --env production",
     "build": "webpack --env production"

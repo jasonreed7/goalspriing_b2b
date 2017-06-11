@@ -14,6 +14,7 @@ export default class CoachSlider extends React.Component {
 
 	render() {
 		var settings = {
+			arrows: false,
 			autoplay: true,
 			autoplaySpeed: 10000,
 			dots: true,
@@ -41,7 +42,7 @@ export default class CoachSlider extends React.Component {
 					<div className="text-lg coach-name">David</div>
 					<div className="text-sm coach-title">Learning & Development</div>
 					<div className="text-md coach-description">
-						David is a pioneer of the coaching industry and teaches coaching at Columbia University.
+						David is a pioneer of the coaching industry and teaches coaching at <br className="break-min-1080" />Columbia University.
 					</div>
 				</div>
 				<div className="text-center text-white">
@@ -62,7 +63,7 @@ export default class CoachSlider extends React.Component {
 					<div className="text-lg coach-name">Erin</div>
 					<div className="text-sm coach-title">Human Flourishing</div>
 					<div className="text-md coach-description">
-						Erin has her Master&apos;s in Applied Positive Psychology and she integrates Eastern philosophies with Western Science to help facilitate human flourishing
+						Erin has her Master&apos;s in Applied Positive Psychology and she integrates Eastern philosophies with Western Science to help facilitate human flourishing.
 					</div>
 				</div>
 				<div className="text-center text-white">

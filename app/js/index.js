@@ -7,6 +7,7 @@ import CoachSlider from './components/CoachSlider/CoachSlider.jsx';
 import TeamSlider from './components/TeamSlider/TeamSlider.jsx';
 import ContactForm from './components/ContactForm/ContactForm.jsx';
 import TestimonialSlider from './components/TestimonialSlider/TestimonialSlider.jsx';
+import VideoModalButton from './components/VideoModalButton/VideoModalButton.jsx';
 
 console.log('hi');
 
@@ -21,3 +22,4 @@ ReactDOM.render(<CoachSlider />, document.getElementById('coach-slider-container
 ReactDOM.render(<TeamSlider />, document.getElementById('team-slider-container'));
 ReactDOM.render(<ContactForm />, document.getElementById('contact-form-container'));
 ReactDOM.render(<TestimonialSlider />, document.getElementById('testimonial-slider-container'));
+ReactDOM.render(<VideoModalButton videoId='199929514' />, document.getElementById('hero-button-container'));

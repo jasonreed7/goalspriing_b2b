@@ -15,3 +15,34 @@ My loadFonts is different from book's loadFonts
 
 Getting rid of side-scrolling: Make .slick-arrow display: none- might have to use important
 Also something else is overflowing
+
+
+
+Smaller sizes:
+
+Logo: Link to top of page
+
+Video: Add a gutter so X is always visible + a little space.
+End: Close the video?
+
+Hero: OK to mobile
+
+About: Header is ok. Stack at 880px then mobile at 768.
+
+Coaches: Good to mobile
+
+How It Works: Similar to pricing- make header 'for you' on second line and stack at 880 
+
+Testimonials: OK to mobile
+
+Pricing: Instead of 'everyone' going to its own line, have 'for everyone'
+Go to mobile stacking layout at 880px then mobile at 768
+
+Clients: OK down to mobile at 768
+
+Team: Switch to two per row at 880px then slider
+
+Footer: Go to line for copyright and line for links then to mobile design
+Add margin between (20px)
+
+Image optimization

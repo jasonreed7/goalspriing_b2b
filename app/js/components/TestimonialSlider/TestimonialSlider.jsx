@@ -4,6 +4,8 @@ import Slider from 'react-slick';
 
 import TestimonialItem from '../TestimonialItem/TestimonialItem.jsx';
 
+import {GatewayDest, GatewayProvider} from 'react-gateway';
+
 import dianeBackgroundPic from '../../../images/testimonials/backgrounds/diane.png';
 import emmaBackgroundPic from '../../../images/testimonials/backgrounds/emma.png';
 import daveBackgroundPic from '../../../images/testimonials/backgrounds/dave.png';
@@ -17,21 +19,27 @@ var testimonialItems = [
 		testimonial: 'Diane designs and delivers learning and development programs for rapid growth tech companies.',
 		backgroundPic: dianeBackgroundPic,
 		circlePic: dianeCirclePic,
-		className: 'testimonial-item-diane'
+		className: 'testimonial-item-diane',
+		videoId: '199938528',
+		gateway: 'diane'
 	},
 	{
 		name: 'Emma Leeds',
 		testimonial: 'Emma is a 3x HR business partner at private, venture-backed companies.',
 		backgroundPic: emmaBackgroundPic,
 		circlePic: emmaCirclePic,
-		className: 'testimonial-item-emma'
+		className: 'testimonial-item-emma',
+		videoId: '199935180',
+		gateway: 'emma'
 	},
 	{
 		name: 'Dave Liao',
 		testimonial: 'Dave is a software project manager and community builder.',
 		backgroundPic: daveBackgroundPic,
 		circlePic: daveCirclePic,
-		className: 'testimonial-item-dave'
+		className: 'testimonial-item-dave',
+		videoId: '199928908',
+		gateway: 'dave'
 	}
 ];
 
@@ -48,6 +56,7 @@ export default class TestimonialSlider extends React.Component {
 		});
 
 		var settings = {
+			arrows: false,
 			autoplay: true,
 			autoplaySpeed: 10000,
 			className: 'testimonial-slider',
@@ -71,9 +80,16 @@ export default class TestimonialSlider extends React.Component {
 		};
 
 		return (
-			<Slider {...settings} >
-				{testimonialItemComponents}
-			</Slider>
+			<GatewayProvider>
+				<div>
+					<GatewayDest name="diane" />
+					<GatewayDest name="emma" />
+					<GatewayDest name="dave" />
+					<Slider {...settings} >
+						{testimonialItemComponents}
+					</Slider>
+				</div>
+			</GatewayProvider>
 		);
 	}
 

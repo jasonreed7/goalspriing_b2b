@@ -67,6 +67,7 @@ export default class CoachSlider extends React.Component {
 
 	render() {
 		var settings = {
+			arrows: false,
 			autoplay: true,
 			autoplaySpeed: 10000,
 			dots: true,

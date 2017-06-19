@@ -37,3 +37,22 @@ footer {
 .footer-link {
 	text-decoration: none;
 }
+
+@media screen and (max-width: 1000px) {
+	.footer-left, 
+	.footer-right {
+		display: block;
+	}
+
+	.footer-left {
+		margin-bottom: 20px;
+	}
+
+	.footer-right {
+		float: none;
+	}
+
+	.footer-link-container:first-child {
+		padding-left: 0;
+	}
+}

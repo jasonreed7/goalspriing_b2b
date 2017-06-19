@@ -1,5 +1,5 @@
-@media screen and (max-width: 860px) {
-	.break-min-860 {
+@media screen and (max-width: 880px) {
+	.break-min-880 {
 		display: none;
 	}
 }
@@ -7,5 +7,29 @@
 @media screen and (max-width: 1080px) {
 	.break-min-1080 {
 		display: none;
+	}
+}
+
+.break-800-to-990,
+.break-768-to-860,
+.break-768-to-1025 {
+	display: none;
+}
+
+@media screen and (min-width: 768px) and (max-width: 860px) {
+	.break-768-to-860 {
+		display: inline;
+	}
+}
+
+@media screen and (min-width: 768px) and (max-width: 1025px) {
+	.break-768-to-1025 {
+		display: inline;
+	}
+}
+
+@media screen and (min-width: 800px) and (max-width: 990px) {
+	.break-800-to-990 {
+		display: inline;
 	}
 }

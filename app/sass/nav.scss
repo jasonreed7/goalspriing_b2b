@@ -32,6 +32,7 @@
 	top: 10px;
 	right: 10px;
 	z-index: 20;
+	font-size: 4px;
 }
 
 .menu-transition-enter {
@@ -74,4 +75,21 @@
 
 .menu-item {
 	margin-bottom: 21px;
+}
+
+@media screen and (max-width: $mobileMaxWidth) {
+
+	.top-nav {
+		padding-top: 4px;
+		padding-bottom: 4px;
+	}
+
+	.nav-logo {
+		height: 24px;
+	}
+
+	.hamburger-button-container {
+		font-size: 3px;
+		top: 6px;
+	}
 }

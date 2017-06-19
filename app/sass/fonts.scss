@@ -1,4 +1,5 @@
 @import "colors";
+@import "breakpoints";
 
 $line-height-copy: 44px;
 
@@ -50,6 +51,17 @@ body,
 
 .text-xl {
     font-size: 122px;
+}
+
+
+@media screen and (max-width: $mobileMaxWidth) {
+    .text-lg {
+        font-size: 32px;
+    }
+
+    .text-sm {
+        font-size: 16px;
+    }
 }
 
 .text-left {

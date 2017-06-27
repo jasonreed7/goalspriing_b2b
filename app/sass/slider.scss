@@ -87,6 +87,10 @@ li.slick-active .testimonial-slider-dot-desktop img {
 	margin-bottom: 18px;
 }
 
+#coach-slider-container .slick-slide {
+	cursor: pointer;
+}
+
 .testimonial-item-diane {
 	background-image: url("../images/testimonials/backgrounds/diane.png");
 }
@@ -124,4 +128,34 @@ li.slick-active .testimonial-slider-dot-desktop img {
 	bottom:50px;
 	left: 50%;
 	margin-left: -250.5px;
+}
+
+@media screen and (max-width: $mobileMaxWidth) {
+	.coach-description {
+		line-height: 22px;
+	}
+
+	#coach-slider-container .slick-dots {
+		top: 334px;
+	}
+
+	.coach-name {
+		margin-top: 38px;
+		margin-bottom: 3px;
+	}
+
+	.slick-dots li {
+		margin: 0 0;
+	}
+
+	.slick-dots li button:before {
+		font-size: 11px;
+		color: white;
+		opacity: 0.4;
+	}
+
+	.slick-dots li.slick-active button:before {
+		color: white;
+		opacity: 1;
+	}
 }

@@ -55,12 +55,16 @@ body,
 
 
 @media screen and (max-width: $mobileMaxWidth) {
-    .text-lg {
-        font-size: 32px;
-    }
-
     .text-sm {
         font-size: 16px;
+    }
+
+    .text-md {
+        font-size: 17px;
+    }
+
+    .text-lg {
+        font-size: 32px;
     }
 }
 

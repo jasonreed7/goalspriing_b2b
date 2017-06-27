@@ -46,3 +46,11 @@ Footer: Go to line for copyright and line for links then to mobile design
 Add margin between (20px)
 
 Image optimization
+
+6/25
+
+For coach slider make sure dots are properly positioned @ 320px width
+
+Double check mobile nav positioning vs photoshop
+
+Sizing a little off on images bottom around 680px

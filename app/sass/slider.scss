@@ -133,6 +133,7 @@ li.slick-active .testimonial-slider-dot-desktop img {
 @media screen and (max-width: $mobileMaxWidth) {
 	.coach-description {
 		line-height: 22px;
+		max-width: 310px;
 	}
 
 	#coach-slider-container .slick-dots {
@@ -156,6 +157,43 @@ li.slick-active .testimonial-slider-dot-desktop img {
 
 	.slick-dots li.slick-active button:before {
 		color: white;
+		opacity: 1;
+	}
+
+	.testimonial-item {
+		padding-top: 72px;
+		padding-bottom: 0;
+		min-height: 550px;
+		box-sizing: border-box;
+	}
+
+	.testimonial-blurb {
+		line-height: 22px;
+		max-width: 270px;
+		margin-left: auto;
+		margin-right: auto;
+		padding-left: 15px;
+		padding-right: 15px;
+		min-height: 66px;
+	}
+
+	#testimonials .page-heading {
+		margin-bottom: 65px;
+		max-height: 33px;
+	}
+
+	.testimonial-slider .slick-dots {
+		bottom: 16px;
+	}
+
+	#team-slider-container .slick-dots li button:before {
+		font-size: 11px;
+		color: black;
+		opacity: 0.4;
+	}
+
+	#team-slider-container .slick-dots li.slick-active button:before {
+		color: black;
 		opacity: 1;
 	}
 }

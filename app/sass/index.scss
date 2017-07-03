@@ -630,6 +630,169 @@ button:focus {
 		margin-bottom: 28px;
 		width: 100%;
 	}	
+
+	#clients {
+		background: none;
+		padding-top: 50px;
+		padding-bottom: 0;
+	}
+
+	.clients-page-title {
+		color: $green;
+	}
+
+	.clients-heading {
+		color: black;
+		margin-left: auto;
+		margin-right: auto;
+		margin-bottom: 16px;
+	}
+
+	.clients-mobile-background-container {
+		background-image: url("../images/clients-background.png"); 
+		background-size: cover;
+		background-position: center center;
+		padding-top: 27px;
+		padding-bottom: 92px;
+	}
+
+	.clients-copy,
+	.line-height-copy {
+		line-height: 22px;
+	}
+
+	.clients-heading {
+		max-width: 275px;
+	}
+
+	.clients-copy {
+		max-width: 270px;
+		margin-left: auto;
+		margin-right: auto;
+		margin-bottom: 19px;
+	}
+
+	.quote-box {
+		padding: 20px 15px 10px;
+		border-width: 5px;
+		max-width: 244px;
+	}
+
+	.quote-box-source {
+		font-size: 11px;
+	}
+
+	.team-name {
+		font-size: 19px;
+	}
+
+	.team-title {
+		font-size: 17px;
+	}
+
+	.team-name,
+	.team-title {
+		line-height: 18px;
+	}
+
+	.team-description {
+		font-size: 15px;
+		max-width: 260px;
+		margin-left: auto;
+		margin-right: auto;
+	}
+
+	.team-picture {
+		width: 180px;
+	}
+
+	.team-picture-container {
+		margin-bottom: 14px;
+	}
+
+	#team .page-heading {
+		margin-bottom: 0;
+	}
+
+	#team {
+		padding-bottom: 110px;
+	}
+
+	#contact {
+		padding-top: 52px;
+		padding-bottom: 88px;
+	}
+
+	#contact .page-heading {
+		margin-bottom: 23px;
+	}
+	
+
+	.contact-subheading {
+		line-height: 22px;
+		max-width: 205px;
+		margin-left: auto;
+		margin-right: auto;
+		margin-bottom: 20px;
+	}
+
+	.contact-row {
+		width: 284px;
+		padding: 0;
+		margin-left: auto;
+		margin-right: auto;
+		white-space: nowrap;
+	}
+
+	#contact .half-row {
+		font-size: 14px;
+		display: inline-block;
+		padding: 0;
+		width: 50%;
+	}
+
+	.contact-half-row-left {
+		text-align: left;
+	}
+
+	.contact-half-row-right {
+		text-align: right;
+	}
+
+	.contact-info-text {
+		border-bottom: 1px solid $green;
+		padding-bottom: 1px;
+	}
+
+	.contact-form {
+		max-width: 284px;
+		margin-left: auto;
+		margin-right: auto;
+	}
+
+	.contact-form-input,
+	.contact-form-textarea,
+	.contact-form-button {
+		font-size: 14px;
+		line-height: 16px;
+		padding: 12px 15px;
+	}
+
+	.contact-thanks-message {
+		font-size: 17px;
+		line-height: 32px;
+		margin-top: 140px;
+	}
+
+	.footer-left,
+	.footer-link-container {
+		font-size: 12px;
+	}
+
+	.footer-link-container {
+		padding: 5px 0;
+		width: 32%;
+	}
 }
 
 @media screen and (min-width: 690px) and (max-width: $mobileMaxWidth) {

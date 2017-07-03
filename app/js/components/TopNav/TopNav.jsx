@@ -91,7 +91,9 @@ export default class TopNav extends React.Component {
 			>
 				<nav className={'top-nav ' + (this.state.open ? 'top-nav-open ' : '') + (this.state.fixed ? 'top-nav-fixed' : '')}>
 					<div className="nav-logo-container text-md">
-						<img src={logo} className="nav-logo" />
+						<a href="/">
+							<img src={logo} className="nav-logo" />
+						</a>
 					</div>
 					<div className="hamburger-button-container text-right">
 						<button className={'hamburger hamburger--spin ' + (this.state.open ? 'is-active' : '')} type="button" onClick={this.toggleOpen}>

@@ -4,10 +4,12 @@ import Slider from 'react-slick';
 import TeamItem from '../TeamItem/TeamItem.jsx';
 
 import matthewPic from '../../../images/team/matthew.png';
+import vanPic from '../../../images/team/van.png';
 import davidRPic from '../../../images/team/david_r.png';
+import beatricePic from '../../../images/team/beatrice.png';
 import paulinePic from '../../../images/team/pauline.png';
-import davidMPPic from '../../../images/team/david_mp.png';
 import richardPic from '../../../images/team/richard.png';
+import davidMPPic from '../../../images/team/david_mp.png';
 import jasonPic from '../../../images/team/jason.png';
 
 function TeamMember({name, title, description, shortDescription, picture}) {
@@ -27,11 +29,25 @@ var teamMembers = [
 		picture: matthewPic
 	}),
 	new TeamMember({
+		name: 'Van Nguyen',
+		title: 'COO',
+		description: 'Van is a creative technologist, product manager, and award-winning filmmaker.',
+		shortDescription: 'Van is a creative technologist',
+		picture: vanPic
+	}),
+	new TeamMember({
 		name: 'David Reed',
 		title: 'CTO',
 		description: 'David has extensive experience in computer science and he works late into the evening exploiting emerging technologies to make goal achievement more accessible.',
 		shortDescription: 'David has extensive experience',
 		picture: davidRPic
+	}),
+	new TeamMember({
+		name: 'Beatrice Leon',
+		title: 'CIO',
+		description: 'Beatrice is an accomplished Chief Information Officer with more than 30 years experience working in technology.',
+		shortDescription: 'Beatrice is an accomplished',
+		picture: beatricePic
 	}),
 	new TeamMember({
 		name: 'Pauline Fatien Diochon',
@@ -41,18 +57,18 @@ var teamMembers = [
 		picture: paulinePic
 	}),
 	new TeamMember({
-		name: 'David Matthew Prior',
-		title: 'Learning & Development',
-		description: 'David is an early pioneer of the coaching industry and teaches coaching at Columbia University and the University of Texas.',
-		shortDescription: 'David is an early pioneer',
-		picture: davidMPPic
-	}),
-	new TeamMember({
 		name: 'Richard Lohr',
 		title: 'Creative Director',
 		description: 'Richard is obsessed with making the world more beautiful and easier to understand by design.',
 		shortDescription: 'Richard is obsessed',
 		picture: richardPic
+	}),
+	new TeamMember({
+		name: 'David Matthew Prior',
+		title: 'Learning & Development',
+		description: 'David is an early pioneer of the coaching industry and teaches coaching at Columbia University and the University of Texas.',
+		shortDescription: 'David is an early pioneer',
+		picture: davidMPPic
 	}),
 	new TeamMember({
 		name: 'Jason Reed',

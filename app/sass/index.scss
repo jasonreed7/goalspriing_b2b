@@ -110,6 +110,7 @@ section {
 	background-color: transparent;
 	margin-bottom: 20px;
 	cursor: pointer;
+	padding: 0;
 }
 
 .play-button:hover {
@@ -124,7 +125,7 @@ section {
 	border-bottom: 20px solid transparent;
 	border-left: 30px solid white;
 	position: relative;
-	left: 43.5px;
+	left: 51.5px;
 }
 
 @media screen and (min-width: 881px) {
@@ -498,7 +499,7 @@ button:focus {
 		border-top: 10px solid transparent;
 		border-bottom: 10px solid transparent;
 		border-left: 15px solid white;
-		left: 21.75px;
+		left: 26px;
 	}
 
 	#hero {
@@ -653,7 +654,7 @@ button:focus {
 		background-size: cover;
 		background-position: center center;
 		padding-top: 27px;
-		padding-bottom: 92px;
+		padding-bottom: 36px;
 	}
 
 	.clients-copy,

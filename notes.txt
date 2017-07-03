@@ -54,3 +54,11 @@ For coach slider make sure dots are properly positioned @ 320px width
 Double check mobile nav positioning vs photoshop
 
 Sizing a little off on images bottom around 680px
+
+7/3
+
+Iphone text input font size
+
+Babel for IE
+
+Image optimization

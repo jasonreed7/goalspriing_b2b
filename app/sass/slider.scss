@@ -130,6 +130,10 @@ li.slick-active .testimonial-slider-dot-desktop img {
 	margin-left: -250.5px;
 }
 
+.client-slider {
+	display: none;
+}
+
 @media screen and (max-width: $mobileMaxWidth) {
 	.coach-description {
 		line-height: 22px;
@@ -195,5 +199,18 @@ li.slick-active .testimonial-slider-dot-desktop img {
 	#team-slider-container .slick-dots li.slick-active button:before {
 		color: black;
 		opacity: 1;
+	}
+
+	.client-slider {
+		display: block;
+		margin-top: 35px;
+	}
+
+	.client-slide-logo-container {
+		display: inline-block;
+	}
+
+	.client-slide-logo {
+		height: 17px;
 	}
 }

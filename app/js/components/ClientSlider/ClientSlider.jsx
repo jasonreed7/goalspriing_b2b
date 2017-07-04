@@ -23,6 +23,7 @@ export default class CoachSlider extends React.Component {
 	}
 
 	// Use componentDidMount instead of autoplay until fix in react-slick
+	// See https://github.com/akiran/react-slick/pull/651
 	render() {
 		// var settings = {
 		// 	arrows: false,

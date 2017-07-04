@@ -57,28 +57,28 @@ export default class TopNav extends React.Component {
 			menu = (
 				<nav key="menu" className={'menu ' + (this.state.open ? 'menu-open' : '')}>
 					<div className="menu-item text-sm text-center">
-						<a href="#about" className="menu-link text-condensed">ABOUT</a>
+						<a href="#about" className="menu-link text-condensed" onClick={this.toggleOpen}>ABOUT</a>
 					</div>
 					<div className="menu-item text-sm text-center">
-						<a href="#coaches" className="menu-link text-condensed">OUR COACHES</a>
+						<a href="#coaches" className="menu-link text-condensed" onClick={this.toggleOpen}>OUR COACHES</a>
 					</div>
 					<div className="menu-item text-sm text-center">
-						<a href="#how-it-works" className="menu-link text-condensed">HOW IT WORKS</a>
+						<a href="#how-it-works" className="menu-link text-condensed" onClick={this.toggleOpen}>HOW IT WORKS</a>
 					</div>
 					<div className="menu-item text-sm text-center">
-						<a href="#testimonials" className="menu-link text-condensed">TESTIMONIALS</a>
+						<a href="#testimonials" className="menu-link text-condensed" onClick={this.toggleOpen}>TESTIMONIALS</a>
 					</div>
 					<div className="menu-item text-sm text-center">
-						<a href="#pricing" className="menu-link text-condensed">PRICING</a>
+						<a href="#pricing" className="menu-link text-condensed" onClick={this.toggleOpen}>PRICING</a>
 					</div>
 					<div className="menu-item text-sm text-center">
-						<a href="#clients" className="menu-link text-condensed">CLIENTS</a>
+						<a href="#clients" className="menu-link text-condensed" onClick={this.toggleOpen}>CLIENTS</a>
 					</div>
 					<div className="menu-item text-sm text-center">
-						<a href="#team" className="menu-link text-condensed">TEAM</a>
+						<a href="#team" className="menu-link text-condensed" onClick={this.toggleOpen}>TEAM</a>
 					</div>
 					<div className="menu-item text-sm text-center">
-						<a href="#contact" className="menu-link text-condensed">CONTACT</a>
+						<a href="#contact" className="menu-link text-condensed" onClick={this.toggleOpen}>CONTACT</a>
 					</div>
 				</nav>
 			);

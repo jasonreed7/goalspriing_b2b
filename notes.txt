@@ -62,3 +62,17 @@ Iphone text input font size
 Babel for IE
 
 Image optimization
+
+Image positioning for mobile testimonial slider
+
+Have menu close after click
+
+Investigate autoplay
+
+Phone number contact us iphone color
+
+Add google analytics
+
+Attempt to fix slider autoplay: 
+In react-slick/src/mixins/helpers.js line 71
+Change props.autoplay to !props.autoplay

@@ -478,6 +478,11 @@ button:focus {
 	outline: 0;
 }
 
+.contact-info-text a {
+	color: white;
+	text-decoration: none;
+}
+
 @media screen and (max-width: $mobileMaxWidth) {
 	.hero-text {
 		line-height: 34px;

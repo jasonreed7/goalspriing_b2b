@@ -15,23 +15,42 @@ import ideoLogo from '../../../images/client-logos/ideo.png';
 
 export default class CoachSlider extends React.Component {
 
+	componentDidMount() {
+		setInterval(() => {
+			this.slider.slickNext();
+		},
+			3000);
+	}
+
+	// Use componentDidMount instead of autoplay until fix in react-slick
 	render() {
+		// var settings = {
+		// 	arrows: false,
+		// 	autoplay: true,
+		// 	autoplaySpeed: 3000,
+		// 	className: 'client-slider',
+		// 	dots: false,
+		// 	draggable: true,
+		// 	infinite: true,
+		// 	pauseOnHover: true,
+		// 	speed: 500,
+		// 	slidesToShow: 1,
+		// 	slidesToScroll: 1
+		// };
+
 		var settings = {
 			arrows: false,
-			autoplay: true,
-			autoplaySpeed: 4000,
 			className: 'client-slider',
 			dots: false,
 			draggable: true,
 			infinite: true,
-			pauseOnHover: true,
 			speed: 500,
 			slidesToShow: 1,
 			slidesToScroll: 1
 		};
 
 		return (
-			<Slider {...settings} >
+			<Slider {...settings} ref={c => this.slider = c} >
 				<div className="text-center client-slide">
 					<div className="client-slide-logo-container">
 						<img src={cultureAmpLogo} className="client-slide-logo" />

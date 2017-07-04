@@ -12,7 +12,8 @@ export default class ContactForm extends React.Component {
 			nameError: false,
 			emailError: false,
 			messageError: false,
-			submitted: false
+			submitted: false,
+			iPhone: false
 		};
 
 		this.handleNameChange = this.handleNameChange.bind(this);
@@ -20,6 +21,13 @@ export default class ContactForm extends React.Component {
 		this.handleMessageChange = this.handleMessageChange.bind(this);
 		this.removeErrors = this.removeErrors.bind(this);
 		this.handleSubmit = this.handleSubmit.bind(this);
+	}
+
+	componentDidMount() {
+		// iPhone form zooming fix
+		if((navigator.userAgent.match(/iPhone/i)) || (navigator.userAgent.match(/iPod/i))) {
+			this.setState({ iPhone: true });
+		}
 	}
 
 	handleNameChange(event) {
@@ -134,7 +142,7 @@ export default class ContactForm extends React.Component {
 
 		return (
 			<div className="contact-form-container">
-				<form className="contact-form" onSubmit={this.handleSubmit} noValidate >
+				<form className={'contact-form ' + (this.state.iPhone ? 'is-iphone' : '')} onSubmit={this.handleSubmit} noValidate >
 					<div className="contact-form-row">
 						<input type="text" name="name" placeholder="Your name" ref={(input) => { this.nameInput = input; }} className={'text-sm text-light contact-form-input ' + (this.state.nameError ? 'input-error' : '') } noValidate required value={this.state.name} onChange={this.handleNameChange} onFocus={this.removeErrors} />
 					</div>

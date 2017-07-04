@@ -57,22 +57,21 @@ Sizing a little off on images bottom around 680px
 
 7/3
 
-Iphone text input font size
+Iphone text input font size X
 
-Babel for IE
+Babel for IE X
 
 Image optimization
 
-Image positioning for mobile testimonial slider
+Image positioning for mobile testimonial slider X
 
-Have menu close after click
+Have menu close after click X
+ 
+Investigate autoplay X
 
-Investigate autoplay
-
-Phone number contact us iphone color
+Phone number contact us iphone color X
 
 Add google analytics
 
-Attempt to fix slider autoplay: 
-In react-slick/src/mixins/helpers.js line 71
-Change props.autoplay to !props.autoplay
+Update when react-slick autoplay issue is solved
+https://github.com/akiran/react-slick/pull/651

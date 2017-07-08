@@ -15,7 +15,7 @@ import daveCirclePic from '../../../images/testimonials/circles/dave.png';
 
 var testimonialItems = [
 	{
-		name: 'Diane Sadoski-Joseph',
+		name: 'Diane Sadowski-Joseph',
 		testimonial: 'Diane designs and delivers learning and development programs for rapid growth tech companies.',
 		backgroundPic: dianeBackgroundPic,
 		circlePic: dianeCirclePic,

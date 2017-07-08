@@ -83,17 +83,17 @@ section {
 	max-width: 360px;
 }
 
-#hero {
-	background-image: url("../images/hero-background.png");
-}
+// #hero {
+// 	background-image: url("../images/hero-background.png");
+// }
 
-#coaches {
-	background-image: url("../images/coaches-background.png");
-}
+// #coaches {
+// 	background-image: url("../images/coaches-background.png");
+// }
 
-#clients {
-	background-image: url("../images/clients-background.png");
-}
+// #clients {
+// 	background-image: url("../images/clients-background.png");
+// }
 
 .hero-text {
 	max-width: 650px;
@@ -815,4 +815,76 @@ button:focus {
 	.images-bottom-container {
 		padding: 0;
 	}
+}
+
+// loading different background images responsively
+@mixin background-set($image-name) {
+	background-image: url("../images/" + $image-name + ".png");
+
+	@each $size in 1400, 1200, 1000, 767, 600, 400 { 
+
+		@media screen and (max-width: $size + px) {
+			background-image: url("../images/" + $image-name + "-" + $size + ".png");
+		}
+
+	}
+}
+
+@mixin background-set-desktop($image-name) {
+	background-image: url("../images/" + $image-name + ".png");
+
+	@each $size in 1400, 1200, 1000 { 
+
+		@media screen and (max-width: $size + px) {
+			background-image: url("../images/" + $image-name + "-" + $size + ".png");
+		}
+
+	}
+
+	@media screen and (max-width: 767px) {
+		background-image: none;
+	}
+}
+
+@mixin background-set-mobile($image-name) {
+
+	@each $size in 767, 600, 400 { 
+
+		@media screen and (max-width: $size + px) {
+			background-image: url("../images/" + $image-name + "-" + $size + ".png");
+		}
+
+	}
+}
+
+#hero {
+	@include background-set(hero-background);
+}
+
+#coaches {
+	@include background-set-desktop(coaches-background);
+}
+
+.coach-slider-container {
+	@include background-set-mobile(coaches-background);
+}
+
+#clients {
+	@include background-set-desktop(clients-background);
+}
+
+.clients-mobile-background-container {
+	@include background-set-mobile(clients-background);
+}
+
+.testimonial-item-emma {
+	@include background-set(testimonials/backgrounds/emma);
+}
+
+.testimonial-item-dave {
+	@include background-set(testimonials/backgrounds/dave);
+}
+
+.testimonial-item-diane {
+	@include background-set(testimonials/backgrounds/diane);
 }

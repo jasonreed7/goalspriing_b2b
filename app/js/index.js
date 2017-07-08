@@ -10,14 +10,6 @@ import TestimonialSlider from './components/TestimonialSlider/TestimonialSlider.
 import ClientSlider from './components/ClientSlider/ClientSlider.jsx';
 import VideoModalButton from './components/VideoModalButton/VideoModalButton.jsx';
 
-console.log('hi');
-
-const a = () => {
-	console.log('es6');
-};
-
-a();
-
 ReactDOM.render(<TopNav />, document.getElementById('nav-container'));
 ReactDOM.render(<CoachSlider />, document.getElementById('coach-slider-container'));
 ReactDOM.render(<TeamSlider />, document.getElementById('team-slider-container'));

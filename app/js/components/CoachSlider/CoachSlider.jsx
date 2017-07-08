@@ -56,7 +56,7 @@ export default class CoachSlider extends React.Component {
 					<div className="text-lg coach-name">Dwight</div>
 					<div className="text-sm coach-title">Athlete Turned Coach</div>
 					<div className="text-md coach-description">
-						Dwight is an athlete turned coach. His path to coaching began on the football field and then as a mentor to youth in South Central Los Angeles.
+						Dwight&#39;s path to coaching began on the football field and continued as a mentor to youth in South Central Los Angeles.
 					</div>
 				</div>
 				<div className="text-center text-white">

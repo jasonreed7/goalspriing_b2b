@@ -25,6 +25,7 @@ const commonConfig =  merge([
 			new HTMLWebpackPlugin({
 				title: 'Goalspriing',
 				template: '!!html-loader!app/index.ejs',
+				favicon: 'app/images/favicon/favicon.png',
 			}),
 		],
 	},
@@ -64,7 +65,7 @@ const productionConfig = merge([
 	// }),
 	parts.loadImages({
 		options: {
-			limit: 15000,
+			limit: 100,
 			name: './images/[name].[hash].[ext]',
 		},
 	}),

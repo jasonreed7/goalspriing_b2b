@@ -29,7 +29,7 @@ const commonConfig =  merge([
 			}),
 		],
 	},
-	parts.lintJavaScript({ include: PATHS.app }),
+	parts.lintJavaScript({ include: PATHS.app, exclude: path.join(PATHS.app, 'js', 'no-lint') }),
 	parts.lintSCSS({ include: PATHS.app }),
 	parts.loadJavaScript({ include: PATHS.app }),
 	// parts.loadHTML({ include: PATHS.app }),
@@ -80,6 +80,7 @@ const productionConfig = merge([
 		'process.env.NODE_ENV',
 		'production'
 	),
+	parts.optimizePngs,
 ]);
 
 const developmentConfig = merge([
@@ -106,5 +107,5 @@ module.exports = (env) => {
 	}
 	else {
 		return merge(commonConfig, developmentConfig);
-	}
+	} 
 };

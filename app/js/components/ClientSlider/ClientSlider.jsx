@@ -12,6 +12,7 @@ import firstDibsLogo from '../../../images/client-logos/1stdibs.png';
 import eeroLogo from '../../../images/client-logos/eero.png';
 import shapewaysLogo from '../../../images/client-logos/shapeways.png';
 import ideoLogo from '../../../images/client-logos/ideo.png';
+import harrysLogo from '../../../images/client-logos/harrys.png';
 
 export default class CoachSlider extends React.Component {
 
@@ -72,6 +73,9 @@ export default class CoachSlider extends React.Component {
 					</div>
 					<div className="client-slide-logo-container">
 						<img src={omazeLogo} className="client-slide-logo" />
+					</div>
+					<div className="client-slide-logo-container">
+						<img src={harrysLogo} className="client-slide-logo" />
 					</div>
 				</div>
 				<div className="text-center client-slide">

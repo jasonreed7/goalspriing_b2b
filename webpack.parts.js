@@ -5,6 +5,7 @@ const GitRevisionPlugin = require('git-revision-webpack-plugin');
 const BabiliPlugin = require('babili-webpack-plugin');
 const OptimizeCSSAssetsPlugin = require('optimize-css-assets-webpack-plugin');
 const cssnano = require('cssnano');
+const ImageminPlugin = require('imagemin-webpack-plugin').default;
 
 const webpack = require('webpack');
 
@@ -260,4 +261,12 @@ exports.setFreeVariable = (key, value) => {
 			new webpack.DefinePlugin(env),
 		],
 	};
+};
+
+exports.optimizePngs = {
+	plugins: [
+		new ImageminPlugin({ 
+			test: /\.png$/,
+		})
+	],
 };

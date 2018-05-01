@@ -9,6 +9,7 @@ import ContactForm from './components/ContactForm/ContactForm.jsx';
 import TestimonialSlider from './components/TestimonialSlider/TestimonialSlider.jsx';
 import ClientSlider from './components/ClientSlider/ClientSlider.jsx';
 import VideoModalButton from './components/VideoModalButton/VideoModalButton.jsx';
+require('./no-lint/googleAnalytics.js');
 
 ReactDOM.render(<TopNav />, document.getElementById('nav-container'));
 ReactDOM.render(<CoachSlider />, document.getElementById('coach-slider-container'));

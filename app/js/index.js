@@ -9,6 +9,7 @@ import ContactForm from './components/ContactForm/ContactForm.jsx';
 import TestimonialSlider from './components/TestimonialSlider/TestimonialSlider.jsx';
 import ClientSlider from './components/ClientSlider/ClientSlider.jsx';
 import VideoModalButton from './components/VideoModalButton/VideoModalButton.jsx';
+import Footer from './components/Footer/Footer.jsx';
 require('./no-lint/googleAnalytics.js');
 
 ReactDOM.render(<TopNav />, document.getElementById('nav-container'));
@@ -19,3 +20,4 @@ ReactDOM.render(<TestimonialSlider />, document.getElementById('testimonial-slid
 ReactDOM.render(<ClientSlider />, document.getElementById('client-slider-container'));
 ReactDOM.render(<ClientSlider />, document.getElementById('client-slider-container-home'));
 ReactDOM.render(<VideoModalButton videoId='199929514' />, document.getElementById('hero-button-container'));
+ReactDOM.render(<Footer />, document.getElementById('footer'));
